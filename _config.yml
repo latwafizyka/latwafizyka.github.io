@@ -1,9 +1,9 @@
-title:             Clean Blog
-email:             your-email@example.com
+title:             Łatwa Fizyka
+email:             latwafizyka45@gmail.com
 description:       A Blog Theme by Start Bootstrap
 author:            Start Bootstrap
-baseurl:           "/startbootstrap-clean-blog-jekyll"
-url:               "http://blackrockdigital.github.io"
+baseurl:           "/"
+url:               "https://latwafizyka.github.io"
 
 # Social Profiles
 twitter_username:  SBootstrap
