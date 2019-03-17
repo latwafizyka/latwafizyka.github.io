@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead"
+    style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+    {% else %}
+    <header class="masthead">
+        {% endif %}
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="page-heading">
+                        <h1>{{ page.title }}</h1>
+                        {% if page.description %}
+                        <span class="subheading">{{ page.description }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <ol>
+                    <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Wstęp do fizyki</a>
+                        {% if page.url == "/teoria/gimnazjum" %}
+                        <span class="badge badge-primary">Jesteś tutaj!</span>
+                        {% endif %}
+                        <ol>
+                            <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Ciała, substancje, procesy
+                                    fizyczne</a></li>
+                            <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Pomiary, jednostki fizyczne</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Właściwości materii</a></li>
+                    <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Budowa materii</a></li>
+                    <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Siły</a></li>
+                    <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Kinematyka</a></li>
+                    <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Dynamika</a>
+                        <ol>
+                            <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Pierwsza zasada dynamiki</a>
+                            </li>
+                            <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Druga zasada dynamiki</a></li>
+                            <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Trzecia zasada dynamiki</a></li>
+                            <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Spadanie swobodne</a></li>
+                            <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Pęd</a></li>
+                        </ol>
+                    </li>
+                    <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Hydrostatyka</a></li>
+                    <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Mechanika</a></li>
+                    <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Termodynamika</a></li>
+                    <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Prąd elektryczny</a></li>
+                    <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Magnetyzm i elektromagnetyzm</a></li>
+                    <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Drgania i fale sprężyste</a></li>
+                    <li><a class="" href="{{"/teoria/liceum" | relative_url }}">Optyka</a></li>
+                </ol>
+                {{ content }}
+
+            </div>
+        </div>
+    </div>
