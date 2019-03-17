@@ -9,16 +9,31 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{{"/" | relative_url }}">Home</a>
+          <a class="nav-link" href="{{"/" | relative_url }}">Główna</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Teoria
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{"/about" | relative_url }}">Gimnazjum</a>
+            <a class="dropdown-item" href="{{"/about" | relative_url }}">Liceum</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Zadania
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{"/about" | relative_url }}">Gimnazjum</a>
+            <a class="dropdown-item" href="{{"/about" | relative_url }}">Liceum</a>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{"/about" | relative_url }}">About</a>
+          <a class="nav-link" href="{{"/about" | relative_url }}">O projekcie</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{"/posts" | relative_url }}">Posts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{"/contact" | relative_url }}">Contact</a>
+          <a class="nav-link" href="{{"/contact" | relative_url }}">Kontakt</a>
         </li>
       </ul>
     </div>
